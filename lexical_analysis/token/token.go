@@ -1,0 +1,32 @@
+package token
+
+import "fmt"
+
+type TokenType string
+
+type Token struct {
+	Type    TokenType
+	Literal String
+}
+
+const (
+	ILLEGAL = "ILLEGAL"
+	EOF     = "EOF"
+
+	IDENT = "IDENT"
+	INT   = "INT"
+
+	ASSIGN = "="
+	PLUS   = "+"
+
+	COMMA     = ","
+	SEMICOLON = ";"
+
+	LPAREN = "("
+	RPAREN = ")"
+	LBRACE = "{"
+	RBRACE = "}"
+
+	FUNCTION = "FUNCTION"
+	LET      = "LET"
+)
