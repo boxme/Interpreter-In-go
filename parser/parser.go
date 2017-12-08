@@ -1,9 +1,9 @@
 package parser
 
 import (
-	"interpreter_using_go/lexical_analysis/ast"
-	"interpreter_using_go/lexical_analysis/lexer"
-	"interpreter_using_go/lexical_analysis/token"
+	"interpreter_using_go/ast"
+	"interpreter_using_go/lexer"
+	"interpreter_using_go/token"
 )
 
 type Parser struct {

@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"interpreter_using_go/lexical_analysis/repl"
+	"interpreter_using_go/repl"
 	"os"
 	"os/user"
 )

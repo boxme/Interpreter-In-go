@@ -1,6 +1,6 @@
 package ast
 
-import "interpretor_using_go/lexical_analysis/token"
+import "interpretor_using_go/token"
 
 type Node interface {
 	TokenLiteral() string

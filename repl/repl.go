@@ -1,8 +1,8 @@
 package repl
 
 import (
-	"interpreter_using_go/lexical_analysis/lexer"
-	"interpreter_using_go/lexical_analysis/token"
+	"interpreter_using_go/lexer"
+	"interpreter_using_go/token"
 	"bufio"
 	"fmt"
 	"io"
