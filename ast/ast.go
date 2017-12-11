@@ -1,6 +1,6 @@
 package ast
 
-import "interpretor_using_go/token"
+import "interpreter_using_go/token"
 
 type Node interface {
 	TokenLiteral() string
@@ -21,7 +21,7 @@ type LetStatement struct {
 // These indicates what interface is LetStatement implementing
 func (ls *LetStatement) statementNode() {}
 func (ls *LetStatement) TokenLiteral() string {
-	return ls.Token.Literal()
+	return ls.Token.Literal
 }
 
 type Expression interface {
@@ -37,7 +37,7 @@ type Identifier struct {
 
 func (i *Identifier) expressionNode() {}
 func (i *Identifier) TokenLiteral() string {
-	return i.Token.Literal()
+	return i.Token.Literal
 }
 
 // Implements Node interface
