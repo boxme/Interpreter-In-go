@@ -29,6 +29,16 @@ type Expression interface {
 	expressionNode()
 }
 
+type ReturnStatement struct {
+	Token       token.Token
+	ReturnValue Expression
+}
+
+func (rs *ReturnStatement) statementNode() {}
+func (rs *ReturnStatement) TokenLiteral() string {
+	return rs.Token.Literal
+}
+
 // Implments Expression interface
 type Identifier struct {
 	Token token.Token
