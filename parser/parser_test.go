@@ -89,7 +89,7 @@ func testLetStatement(t *testing.T, s ast.Statement, name string) bool {
 		return false
 	}
 
-	// type check
+	// type check: https://golang.org/ref/spec#Type_assertions
 	letStmt, ok := s.(*ast.LetStatement)
 	if !ok {
 		t.Errorf("s not *ast.LetStatement. got=%T", s)
