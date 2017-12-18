@@ -95,7 +95,7 @@ func (rs *ReturnStatement) String() string {
 	return out.String()
 }
 
-// Implments Expression interface
+// Implements Expression interface
 type Identifier struct {
 	Token token.Token
 	Value string
