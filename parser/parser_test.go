@@ -278,7 +278,7 @@ func TestParsingInfixExpressions(t *testing.T) {
 	}
 }
 
-func testOperatorPrecedenceString(t *testing.T) {
+func TestOperatorPrecedenceString(t *testing.T) {
 	tests := []struct {
 		input    string
 		expected string
@@ -288,7 +288,7 @@ func testOperatorPrecedenceString(t *testing.T) {
 			"((-a) * b)",
 		},
 		{
-			"-a * b",
+			"!-a",
 			"(!(-a))",
 		},
 		{
