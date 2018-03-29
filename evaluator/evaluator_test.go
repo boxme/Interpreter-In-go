@@ -178,7 +178,7 @@ func TestErrorHandling(t *testing.T) {
 		},
 		{
 			"foobar",
-			"identifier not found: foorbar",
+			"identifier not found: foobar",
 		},
 	}
 
@@ -217,8 +217,9 @@ func testEval(input string) object.Object {
 	l := lexer.New(input)
 	p := parser.New(l)
 	ast := p.ParseProgram()
+	env := object.NewEnvironment()
 
-	return Eval(ast)
+	return Eval(ast, env)
 }
 
 func testIntegerObject(t *testing.T, obj object.Object, expected int64) bool {
